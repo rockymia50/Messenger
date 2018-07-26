@@ -1,40 +1,32 @@
-*
-{
-margin: 0;
-padding: 0;
-outline: none;
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 
-body
-{
+body {
     font-family: Roboto, sans-serif;
-    overflow:hidden;
+    overflow: hidden;
     background: #c1b4ff;
-
 }
 
-.container
-{
-width: 430px;
-height: 900px;
-margin: 0px auto;
-margin-left: 960px;
-display: inline-block;
-
+.container {
+    width: 430px;
+    height: 900px;
+    margin: 0px auto;
+    margin-left: 960px;
+    display: inline-block;
 }
 
-div.app
-{
+div.app {
     position: relative;
     width: 380px;
     height: 670px;
     background: #5850c0;
     margin-top: 30px;
-
 }
 
-div.app::before
-{
+div.app::before {
     content: '';
     position: absolute;
     left: 0;
@@ -45,22 +37,20 @@ div.app::before
     z-index: 0;
 }
 
-div.app:after
-{
+div.app:after {
     content: '';
     position: absolute;
     left: 0;
     width: 100%;
     height: 100px;
-    displays: inline-block;
+    display: inline-block;
     bottom: 0;
     box-shadow: inset 0 -80px 85px -35 #3c33b0;
     z-index: 0;
 }
 
-div.app div.head
-{
-    z-index:1;
+div.app div.head {
+    z-index: 1;
     position: relative;
     display: block;
     width: 100%;
@@ -70,15 +60,12 @@ div.app div.head
     text-transform: uppercase;
     letter-spacing: 2px;
     color: rgba(255, 255, 255, 0.7);
-
     background: #271c5d;
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-    box-shadow:  inset 0 -15px 35px -5px rgba(0, 0, 0, 0.3);
-
+    box-shadow: inset 0 -15px 35px -5px rgba(0, 0, 0, 0.3);
 }
 
-div.head span.title
-{
+div.head span.title {
     position: absolute;
     width: 100%;
     display: inline-block;
@@ -89,7 +76,45 @@ div.head span.title
     color: #fff;
 }
 
-div.head span.messages-notification
-{
-    
+div.head span.messages-notification {
+    position: relative;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 15px;
+    color: #fff;
+    margin-top: 2px;
+}
+
+div.head span.messages-notification span.count {
+    position: absolute;
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: #f42052;
+    line-height: 17px;
+    border-radius: 100%;
+}
+
+div.head span.create-new {
+    float: right;
+    font-size: 17px;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #fff;
+    margin-top: 2px;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+div.search-bar {
+    position: relative;
+    margin-top: 15px;
+    text-align: center;
+    z-index: 1;
 }
