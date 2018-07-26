@@ -1,0 +1,95 @@
+*
+{
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+body
+{
+    font-family: Roboto, sans-serif;
+    overflow:hidden;
+    background: #c1b4ff;
+
+}
+
+.container
+{
+width: 430px;
+height: 900px;
+margin: 0px auto;
+margin-left: 960px;
+display: inline-block;
+
+}
+
+div.app
+{
+    position: relative;
+    width: 380px;
+    height: 670px;
+    background: #5850c0;
+    margin-top: 30px;
+
+}
+
+div.app::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    box-shadow: inset 0 80px 85px -35 #3c33b0;
+    z-index: 0;
+}
+
+div.app:after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    displays: inline-block;
+    bottom: 0;
+    box-shadow: inset 0 -80px 85px -35 #3c33b0;
+    z-index: 0;
+}
+
+div.app div.head
+{
+    z-index:1;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+
+    background: #271c5d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow:  inset 0 -15px 35px -5px rgba(0, 0, 0, 0.3);
+
+}
+
+div.head span.title
+{
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    left: 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 2px;
+    color: #fff;
+}
+
+div.head span.messages-notification
+{
+    
+}
