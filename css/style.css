@@ -148,3 +148,12 @@ div.search-bar i.fa{
      color: rgba(255, 255, 255, 0.8);
      font-size: 16px;
 }
+
+.friends-list
+{
+  margin-top: 35px;  
+}
+
+.friends-list ul li{
+    position: relative;
+}
