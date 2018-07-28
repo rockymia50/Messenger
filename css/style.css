@@ -118,3 +118,33 @@ div.search-bar {
     text-align: center;
     z-index: 1;
 }
+
+div.search-bar .ip-search
+{
+    width: 85%;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius:50px;
+    border: 1px solid rgba(60,51,176,0.7);
+    box-shadow: inset 0 25px 25px -15 rgba(60,51,176,0.15);
+}
+
+div.search-bar .ip-search::-moz-placeholder{
+
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+div.search-bar i.fa{
+
+     position:absoulte;
+     right: 0;
+     margin-right: 25px;
+     margin-top: 14px;
+     color: rgba(255, 255, 255, 0.8);
+     font-size: 16px;
+}
